@@ -19,9 +19,7 @@
         <nav class="site-menu">
           <ul class="site-menu__list">
             <li class="site-menu__item">
-              <a class="site-menu__link site-menu__link_active" href="#"
-                >Home</a
-              >
+              <a class="site-menu__link" href="#">Home</a>
             </li>
             <li class="site-menu__item">
               <a class="site-menu__link" href="#feature">Portfolio</a>
@@ -30,7 +28,7 @@
               <a class="site-menu__link" href="#team">About us</a>
             </li>
             <li class="site-menu__item">
-              <a class="site-menu__link" href="#">Contact</a>
+              <a class="site-menu__link" href="#subscribe">Contact</a>
             </li>
           </ul>
         </nav>
@@ -213,64 +211,83 @@
           alt="Лидер команды Mark Waugh"
         />
 
-        <div class="team__inner">
-          <div class="team__lead-main">
-            <span class="team__lead-name">Mark Waugh</span>
-            <p class="team__lead-about">
-              Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed
-              dooing eiusmod tempor incididut labore Ui / Ux , print template.
-            </p>
-            <ul class="team__lead-social">
-              <li><a class="team__lead-link" href="">Facebook</a></li>
-              <li><a class="team__lead-link" href="">Dribble</a></li>
-              <li><a class="team__lead-link" href="">Behance</a></li>
-              <li><a class="team__lead-link" href="">Twitter</a></li>
-            </ul>
-          </div>
-          <section class="team__others">
-            <div class="team__other">
-              <img
-                class="team__other-photo"
-                width="198"
-                height="217"
-                src="./images/woman-people.svg"
-                alt="фото Sokina Jue"
-              />
-              <span class="team__other-name">Sokina Jue</span>
-            </div>
-            <div class="team__other">
-              <img
-                class="team__other-photo"
-                width="198"
-                height="217"
-                src="./images/woman-people.svg"
-                alt="фото Fo Bo"
-              />
-              <span class="team__other-name">Fo Bo</span>
-            </div>
-            <div class="team__other">
-              <img
-                class="team__other-photo"
-                width="198"
-                height="217"
-                src="./images/woman-people.svg"
-                alt="фото Li Chan"
-              />
-              <span class="team__other-name">Li Chan</span>
-            </div>
-            <div class="team__other">
-              <img
-                class="team__other-photo"
-                width="198"
-                height="217"
-                src="./images/woman-people.svg"
-                alt="фото Jue Han"
-              />
-              <span class="team__other-name">Jue Han</span>
-            </div>
-          </section>
+        <div class="team__lead-main">
+          <span class="team__lead-name">Mark Waugh</span>
+          <p class="team__lead-about">
+            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing
+            eiusmod tempor incididut labore Ui / Ux , print template.
+          </p>
+          <ul class="team__lead-social">
+            <li><a class="team__lead-link" href="">Facebook</a></li>
+            <li><a class="team__lead-link" href="">Dribble</a></li>
+            <li><a class="team__lead-link" href="">Behance</a></li>
+            <li><a class="team__lead-link" href="">Twitter</a></li>
+          </ul>
         </div>
+        <section class="team__others">
+          <div class="team__other">
+            <img
+              class="team__other-photo"
+              width="198"
+              height="217"
+              src="./images/woman-people.svg"
+              alt="фото Sokina Jue"
+            />
+            <span class="team__other-name">Sokina Jue</span>
+          </div>
+          <div class="team__other">
+            <img
+              class="team__other-photo"
+              width="198"
+              height="217"
+              src="./images/woman-people.svg"
+              alt="фото Fo Bo"
+            />
+            <span class="team__other-name">Fo Bo</span>
+          </div>
+          <div class="team__other">
+            <img
+              class="team__other-photo"
+              width="198"
+              height="217"
+              src="./images/woman-people.svg"
+              alt="фото Li Chan"
+            />
+            <span class="team__other-name">Li Chan</span>
+          </div>
+          <div class="team__other">
+            <img
+              class="team__other-photo"
+              width="198"
+              height="217"
+              src="./images/woman-people.svg"
+              alt="фото Jue Han"
+            />
+            <span class="team__other-name">Jue Han</span>
+          </div>
+        </section>
       </div>
     </section>
+    <div class="root__inner root__inner_dark">
+      <section class="subscribe">
+        <h2 class="subscribe__heading" id="subscribe">
+          Design tips, tricks, and freebies. Delivered weekly.
+        </h2>
+        <p class="subscribe__about">
+          Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+          eiusmod.
+        </p>
+        <form class="subscribe__form" method="get">
+          <input
+            class="subscribe__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address..."
+          />
+          <button class="subscribe__button" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
