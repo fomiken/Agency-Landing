@@ -47,13 +47,13 @@
 /* Root*/
 
 .root {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: #000000;
-  padding-bottom: 1000px;
 }
+
 button {
   cursor: pointer;
 }
@@ -75,6 +75,10 @@ button {
   background-color: #2d2d2d;
 }
 
+.root__inner_grey-2 {
+  background-color: #313030;
+}
+
 .root__inner_section {
   padding: 103px 0 111px 0;
 }
@@ -88,7 +92,7 @@ button {
 .header {
   display: flex;
   justify-content: center;
-  width: 1249px;
+  max-width: 1249px;
   min-height: 89px;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -96,13 +100,23 @@ button {
 .site-menu {
   margin-left: -30px;
 }
-
+@media screen and (max-width: 600px) {
+  .site-menu {
+    margin-left: initial;
+  }
+}
 .site-menu__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .site-menu__list {
+    justify-content: center;
+  }
 }
 
 .site-menu__item {
@@ -115,7 +129,7 @@ button {
   align-items: center;
   padding: 0 30px;
   color: #e0e0e0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -136,41 +150,63 @@ button {
 
 .intro {
   display: flex;
-  width: 1249px;
+  flex-wrap: wrap;
+  max-width: 1249px;
   margin: 0 auto;
   justify-content: space-between;
 }
 
+@media screen and (min-width:800px) and (max-width: 1240px) {
+  .intro {
+    flex-wrap: nowrap;
+  }
+}
+
 .intro__info {
   max-width: 544px;
-  margin-top: -15px;
+  margin-right: 2vw;
+}
+
+@media screen and (max-width: 1240px) {
+  .intro__info {
+    width: 50%;
+    margin-right: initial;
+   }
+}
+
+@media screen and (max-width:800px) {
+  .intro__info {
+    width: 100%;
+    margin-bottom: 80px;
+   }
 }
 
 .intro__heading {
-  font-family: "Open Sans";
-  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
   font-size: 60px;
-  line-height: 72px;
+  line-height: 1.2;
+  font-weight: 800;
+  font-variation-settings: "vght" 800;
   letter-spacing: 1.5px;
-  text-align: left;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 0 36px;
+  margin: -15px 0 19px;
 }
 
-.intro__heading-special {
+.intro__span-special {
   letter-spacing: 6px;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto ;
 }
 
-.intro__about {
-  font-family: "Open Sans";
-  font-weight: 400;
+.intro__text {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0px;
-  text-align: left;
   color: #000000;
-  margin: 0 0 49px;
+  margin: 0 0 58px;
 }
 
 .action-link {
@@ -181,7 +217,7 @@ button {
   width: 227px;
   min-height: 55px;
   padding: 0.5em 1em;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 34px;
   font-weight: 700;
@@ -210,11 +246,23 @@ button {
   box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
 }
 
+@media screen and (max-width: 1240px) {
+  .intro__video {
+    width: 50%;
+   }
+}
+
+@media screen and (max-width:800px) {
+  .intro__video{
+    width: 100%;
+   }
+}
+
 /* Services */
 
 .services {
   display: flex;
-  width: 1249px;
+  max-width: 1249px;
   margin: 0 auto;
   padding: 107px 0 98px;
   border-bottom: 2px solid #ececec;
@@ -226,7 +274,7 @@ button {
 }
 
 .services__heading {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
@@ -237,8 +285,7 @@ button {
 }
 
 .services__about {
-  font-family: "Open Sans";
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0px;
@@ -301,7 +348,7 @@ button {
 
 .services__title {
   margin: 0 0 13px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
@@ -312,9 +359,8 @@ button {
 
 .services__text {
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
-  font-weight: 400;
   line-height: 28px;
   letter-spacing: 0px;
   text-align: left;
@@ -324,7 +370,7 @@ button {
 /*Features*/
 
 .feature {
-  width: 1249px;
+  max-width: 1249px;
   margin: 0 auto;
   padding: 105px 0 65px;
   text-align: center;
@@ -335,7 +381,7 @@ button {
 }
 
 .feature__heading {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
@@ -347,8 +393,7 @@ button {
 
 .feature__about {
   width: 537px;
-  font-family: "Open Sans";
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0px;
@@ -387,7 +432,7 @@ button {
 }
 
 .filter__link {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 24px;
@@ -416,7 +461,7 @@ button {
 /*Team*/
 
 .team {
-  width: 1249px;
+  max-width: 1249px;
   margin: 0 auto;
   padding: 65px 0 57px;
   text-align: left;
@@ -427,7 +472,7 @@ button {
 }
 
 .team__heading {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
@@ -439,8 +484,7 @@ button {
 
 .team__about {
   width: 478px;
-  font-family: "Open Sans";
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0px;
@@ -475,7 +519,7 @@ button {
 
 .team__lead-name {
   display: block;
-  font-family: " Open Sans";
+  font-family: " Open Sans", sans-serif;
   font-weight: 600;
   font-size: 30px;
   letter-spacing: 0.28px;
@@ -486,8 +530,7 @@ button {
 
 .team__lead-about {
   width: 660px;
-  font-family: " Open Sans";
-  font-weight: 400;
+  font-family: " Open Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0px;
@@ -506,7 +549,7 @@ button {
 }
 
 .team__lead-link {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: Italic;
   font-size: 18px;
   line-height: 24px;
@@ -544,7 +587,7 @@ button {
 .team__other-name {
   display: none;
   color: #ffffff;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -568,13 +611,13 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1249px;
+  max-width: 1249px;
   margin: 0 auto;
   padding: 150px 0 140px;
 }
 
 .subscribe__heading {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
@@ -586,8 +629,7 @@ button {
 
 .subscribe__about {
   width: 573px;
-  font-family: "Open Sans";
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
   color: #ffffff;
@@ -618,7 +660,7 @@ button {
   border: none;
   border-radius: 5px;
   background-color: #ff2d2d;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 34px;
@@ -630,17 +672,18 @@ button {
 /*Get in touch*/
 
 .feedback {
-  width: 1249px;
+  max-width: 1249px;
   margin: 0 auto;
   padding: 104px 0 107px 0;
 }
 
 .feedback__header {
-  margin-bottom: 67px;
+  margin-bottom: 77px;
+  max-width: 752px;
 }
 
 .feedback__heading {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
@@ -651,18 +694,29 @@ button {
 }
 
 .feedback__about {
-  width: 450px;
-  font-family: " Open Sans";
-  font-weight: 400;
+  font-family: " Open Sans", sans-serif;
   font-size: 16px;
+  line-height: 1.75;
   color: #000000;
-  margin: 0 0 39px;
+  margin: 0 0 50px;
+}
+
+.feedback__body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feedback__form {
+  width: 731px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .feedback__form input::placeholder,
 .feedback__form textarea::placeholder {
-  font-family: " Open Sans";
-  font-weight: 400;
+  font-family: " Open Sans", sans-serif;
   font-size: 16px;
   color: #000000;
 }
@@ -671,15 +725,14 @@ button {
   box-sizing: border-box;
   width: 339px;
   height: 69px;
-  font-family: " Open Sans";
-  font-weight: 400;
+  font-family: " Open Sans", sans-serif;
   font-size: 16px;
   color: #000000;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 5px;
   padding-left: 54px;
-  margin-right: 54px;
+  margin-right: 53px;
   margin-bottom: 44px;
 }
 
@@ -687,8 +740,7 @@ button {
   box-sizing: border-box;
   width: 339px;
   height: 69px;
-  font-family: " Open Sans";
-  font-weight: 400;
+  font-family: " Open Sans", sans-serif;
   font-size: 16px;
   color: #000000;
   background-color: rgba(0, 0, 0, 0.1);
@@ -701,14 +753,14 @@ button {
 .feedback__textarea {
   box-sizing: border-box;
   resize: none;
-  font-family: "Open Sans";
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #000000;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 5px;
   padding: 31px 51px;
+  margin-bottom: 45px;
   width: 731px;
   height: 249px;
 }
@@ -716,57 +768,77 @@ button {
 .feedback__button {
   width: 728px;
   height: 72px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
-  background-color: #FF3B3B;
+  background-color: #ff3b3b;
   color: #ffffff;
 }
 
 .feedback__contacts {
-  color: #FFFFFF;
-  background-color: #2D2D2D;
+  color: #ffffff;
+  background-color: #2d2d2d;
 }
 
 .contacts {
   width: 315px;
-  padding: 141px 17px 141px 81px ;
+  padding: 141px 17px 141px 79px;
 }
 
 .contacts__heading {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 0 30px;
 }
 
 .contacts__address {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #ffffff;
   margin: 0 0 27px;
 }
 
 .contacts__email {
   display: block;
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #ffffff;
   margin: 0 0 20px;
 }
 
 .contacts__tel {
   display: block;
-  font-family: "Open Sans";
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: #FFFFFF;
+  line-height: 1.75;
+  color: #ffffff;
   margin: 0;
+}
+/*footer*/
+
+.footer {
+  max-width: 1249px;
+  height: 111px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  color: #b8b8b8;
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  gap: 18px;
 }
