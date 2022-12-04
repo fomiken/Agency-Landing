@@ -186,11 +186,14 @@ button {
 
 .popup-menu__item {
   display: flex;
+  width: 100%;
+  align-items: center;
   min-height: 89px;
 }
 
 .popup-menu__link {
   display: flex;
+  width: 100%;
   align-items: center;
   padding: 0 30px;
   color: #e0e0e0;
