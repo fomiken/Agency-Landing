@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="scripts/popup-menu.js"></script>
   </head>
   <body class="root">
     <header class="root__inner root__inner_intro root__inner_grey">
@@ -29,6 +30,23 @@
             </li>
             <li class="site-menu__item">
               <a class="site-menu__link" href="#touch">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="popup-menu">
+          <button class="popup-menu__button"></button>
+          <ul class="popup-menu__list hide">
+            <li class="popup-menu__item">
+              <a class="popup-menu__link" href="#">Home</a>
+            </li>
+            <li class="popup-menu__item">
+              <a class="popup-menu__link" href="#feature">Portfolio</a>
+            </li>
+            <li class="popup-menu__item">
+              <a class="popup-menu__link" href="#team">About us</a>
+            </li>
+            <li class="popup-menu__item">
+              <a class="popup-menu__link" href="#touch">Contact</a>
             </li>
           </ul>
         </nav>
@@ -211,7 +229,8 @@
             width="324"
             height="460"
             src="./images/man-people.svg"
-            alt="Лидер команды Mark Waugh"/>
+            alt="Лидер команды Mark Waugh"
+          />
           <div class="team__lead-main">
             <span class="team__lead-name">Mark Waugh</span>
             <p class="team__lead-about">
@@ -342,38 +361,48 @@
       </section>
     </main>
     <footer class="root__inner root__inner_grey-2">
-      <section class="footer">
+      <div class="footer">
         <p class="footer__copyright">
           &#169; Copyright @Junaed 2016, All rights reserved.
         </p>
-        <div class="footer__social social">
-          <a class="social__link" href=""
-            ><img
-              class="social__logo"
-              src="./images/TwitteR.svg"
-              alt="Иконка Твиттер"
-          /></a>
-          <a class="social__link" href=""
-            ><img
-              class="social__logo"
-              src="./images/LinkedIn.svg"
-              alt="Иконка Линк"
-          /></a>
-          <a class="social__link" href=""
-            ><img
-              class="social__logo"
-              src="./images/Google.svg"
-              alt="Иконка Гугл"
-            />
-          </a>
-          <a class="social__link" href=""
-            ><img
-              class="social__logo"
-              src="./images/Facebook.svg"
-              alt="Иконка Фейсбук"
-          /></a>
-        </div>
-      </section>
+        <ul class="footer__social social">
+          <li>
+            <a class="social__link" href="">
+              <img
+                class="social__logo"
+                src="./images/TwitteR.svg"
+                alt="Иконка Твиттер"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href=""
+              ><img
+                class="social__logo"
+                src="./images/LinkedIn.svg"
+                alt="Иконка Линк"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href=""
+              ><img
+                class="social__logo"
+                src="./images/Google.svg"
+                alt="Иконка Гугл"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href=""
+              ><img
+                class="social__logo"
+                src="./images/Facebook.svg"
+                alt="Иконка Фейсбук"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
